@@ -12,6 +12,10 @@ func main() {
 	}
 	test := os.Args[1]
 	var count int
+	if len(test) == 0 {
+		fmt.Println(count)
+		return
+	}
 	for _, word := range test {
 		if word == ' ' {
 			count++
